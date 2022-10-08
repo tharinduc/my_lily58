@@ -1,0 +1,2 @@
+avrdude -p atmega32u4 -c avr109 -U flash:w:./.build/lily58_rev1_default.hex:i -P /dev/ttyACM0
+avrdude -c avr109 -p m32u4 -P /dev/ttyACM0 -U eeprom:w:./quantum/split_common/eeprom-righthand.eep:a
